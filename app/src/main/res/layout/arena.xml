@@ -229,7 +229,7 @@
                 android:layout_marginStart="40dp"
                 android:fontFamily="@font/jockey_one_regular"
                 android:text="Map Controls:"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="18dp"
                 android:visibility="visible"
                 app:layout_constraintBottom_toBottomOf="@+id/rightButton"
@@ -244,7 +244,7 @@
                 android:layout_marginTop="50dp"
                 android:fontFamily="@font/jockey_one_regular"
                 android:text="Command Controls:"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="18dp"
                 app:layout_constraintEnd_toEndOf="@+id/mapControlTitle"
                 app:layout_constraintTop_toBottomOf="@+id/mapControlTitle" />
@@ -256,7 +256,7 @@
                 android:layout_marginTop="50dp"
                 android:fontFamily="@font/jockey_one_regular"
                 android:text="Preset Controls:"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="@+id/commandControlsTitle"
                 app:layout_constraintTop_toBottomOf="@+id/commandControlsTitle" />
