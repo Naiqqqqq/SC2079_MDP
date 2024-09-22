@@ -12,45 +12,45 @@ public class Helper {
 
   protected static Map<String, Integer> resources = new HashMap<String, Integer>() {
     {
-      put("o1n", R.drawable.obstacle_1_n);
-      put("o1e", R.drawable.obstacle_1_e);
-      put("o1s", R.drawable.obstacle_1_s);
-      put("o1w", R.drawable.obstacle_1_w);
+      put("1n", R.drawable.obstacle_1_n);
+      put("1e", R.drawable.obstacle_1_e);
+      put("1s", R.drawable.obstacle_1_s);
+      put("1w", R.drawable.obstacle_1_w);
 
-      put("o2n", R.drawable.obstacle_2_n);
-      put("o2e", R.drawable.obstacle_2_e);
-      put("o2s", R.drawable.obstacle_2_s);
-      put("o2w", R.drawable.obstacle_2_w);
+      put("2n", R.drawable.obstacle_2_n);
+      put("2e", R.drawable.obstacle_2_e);
+      put("2s", R.drawable.obstacle_2_s);
+      put("2w", R.drawable.obstacle_2_w);
 
-      put("o3n", R.drawable.obstacle_3_n);
-      put("o3e", R.drawable.obstacle_3_e);
-      put("o3s", R.drawable.obstacle_3_s);
-      put("o3w", R.drawable.obstacle_3_w);
+      put("3n", R.drawable.obstacle_3_n);
+      put("3e", R.drawable.obstacle_3_e);
+      put("3s", R.drawable.obstacle_3_s);
+      put("3w", R.drawable.obstacle_3_w);
 
-      put("o4n", R.drawable.obstacle_4_n);
-      put("o4e", R.drawable.obstacle_4_e);
-      put("o4s", R.drawable.obstacle_4_s);
-      put("o4w", R.drawable.obstacle_4_w);
+      put("4n", R.drawable.obstacle_4_n);
+      put("4e", R.drawable.obstacle_4_e);
+      put("4s", R.drawable.obstacle_4_s);
+      put("4w", R.drawable.obstacle_4_w);
 
-      put("o5n", R.drawable.obstacle_5_n);
-      put("o5e", R.drawable.obstacle_5_e);
-      put("o5s", R.drawable.obstacle_5_s);
-      put("o5w", R.drawable.obstacle_5_w);
+      put("5n", R.drawable.obstacle_5_n);
+      put("5e", R.drawable.obstacle_5_e);
+      put("5s", R.drawable.obstacle_5_s);
+      put("5w", R.drawable.obstacle_5_w);
 
-      put("o6n", R.drawable.obstacle_6_n);
-      put("o6e", R.drawable.obstacle_6_e);
-      put("o6s", R.drawable.obstacle_6_s);
-      put("o6w", R.drawable.obstacle_6_w);
+      put("6n", R.drawable.obstacle_6_n);
+      put("6e", R.drawable.obstacle_6_e);
+      put("6s", R.drawable.obstacle_6_s);
+      put("6w", R.drawable.obstacle_6_w);
 
-      put("o7n", R.drawable.obstacle_7_n);
-      put("o7e", R.drawable.obstacle_7_e);
-      put("o7s", R.drawable.obstacle_7_s);
-      put("o7w", R.drawable.obstacle_7_w);
+      put("7n", R.drawable.obstacle_7_n);
+      put("7e", R.drawable.obstacle_7_e);
+      put("7s", R.drawable.obstacle_7_s);
+      put("7w", R.drawable.obstacle_7_w);
 
-      put("o8n", R.drawable.obstacle_8_n);
-      put("o8e", R.drawable.obstacle_8_e);
-      put("o8s", R.drawable.obstacle_8_s);
-      put("o8w", R.drawable.obstacle_8_w);
+      put("8n", R.drawable.obstacle_8_n);
+      put("8e", R.drawable.obstacle_8_e);
+      put("8s", R.drawable.obstacle_8_s);
+      put("8w", R.drawable.obstacle_8_w);
 
       put("11", R.drawable.number_1);
       put("11n", R.drawable.number_1_n);

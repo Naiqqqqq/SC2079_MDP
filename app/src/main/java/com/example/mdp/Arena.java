@@ -214,16 +214,16 @@ public class Arena extends AppCompatActivity {
             int orientation = (int) obstacle1.getRotation();
             switch (((orientation / 90) % 4 + 4) % 4) {
                 case 0:
-                    obstacle1.setImageResource(Helper.resources.get("o1n"));
+                    obstacle1.setImageResource(Helper.resources.get("1n"));
                     break;
                 case 1:
-                    obstacle1.setImageResource(Helper.resources.get("o1e"));
+                    obstacle1.setImageResource(Helper.resources.get("1e"));
                     break;
                 case 2:
-                    obstacle1.setImageResource(Helper.resources.get("o1s"));
+                    obstacle1.setImageResource(Helper.resources.get("1s"));
                     break;
                 case 3:
-                    obstacle1.setImageResource(Helper.resources.get("o1w"));
+                    obstacle1.setImageResource(Helper.resources.get("1w"));
                     break;
             }
         });
@@ -233,16 +233,16 @@ public class Arena extends AppCompatActivity {
             int orientation = (int) obstacle2.getRotation();
             switch (((orientation / 90) % 4 + 4) % 4) {
                 case 0:
-                    obstacle2.setImageResource(Helper.resources.get("o2n"));
+                    obstacle2.setImageResource(Helper.resources.get("2n"));
                     break;
                 case 1:
-                    obstacle2.setImageResource(Helper.resources.get("o2e"));
+                    obstacle2.setImageResource(Helper.resources.get("2e"));
                     break;
                 case 2:
-                    obstacle2.setImageResource(Helper.resources.get("o2s"));
+                    obstacle2.setImageResource(Helper.resources.get("2s"));
                     break;
                 case 3:
-                    obstacle2.setImageResource(Helper.resources.get("o2w"));
+                    obstacle2.setImageResource(Helper.resources.get("2w"));
                     break;
             }
         });
@@ -252,16 +252,16 @@ public class Arena extends AppCompatActivity {
             int orientation = (int) obstacle3.getRotation();
             switch (((orientation / 90) % 4 + 4) % 4) {
                 case 0:
-                    obstacle3.setImageResource(Helper.resources.get("o3n"));
+                    obstacle3.setImageResource(Helper.resources.get("3n"));
                     break;
                 case 1:
-                    obstacle3.setImageResource(Helper.resources.get("o3e"));
+                    obstacle3.setImageResource(Helper.resources.get("3e"));
                     break;
                 case 2:
-                    obstacle3.setImageResource(Helper.resources.get("o3s"));
+                    obstacle3.setImageResource(Helper.resources.get("3s"));
                     break;
                 case 3:
-                    obstacle3.setImageResource(Helper.resources.get("o3w"));
+                    obstacle3.setImageResource(Helper.resources.get("3w"));
                     break;
             }
         });
@@ -271,16 +271,16 @@ public class Arena extends AppCompatActivity {
             int orientation = (int) obstacle4.getRotation();
             switch (((orientation / 90) % 4 + 4) % 4) {
                 case 0:
-                    obstacle4.setImageResource(Helper.resources.get("o4n"));
+                    obstacle4.setImageResource(Helper.resources.get("4n"));
                     break;
                 case 1:
-                    obstacle4.setImageResource(Helper.resources.get("o4e"));
+                    obstacle4.setImageResource(Helper.resources.get("4e"));
                     break;
                 case 2:
-                    obstacle4.setImageResource(Helper.resources.get("o4s"));
+                    obstacle4.setImageResource(Helper.resources.get("4s"));
                     break;
                 case 3:
-                    obstacle4.setImageResource(Helper.resources.get("o4w"));
+                    obstacle4.setImageResource(Helper.resources.get("4w"));
                     break;
             }
         });
@@ -290,16 +290,16 @@ public class Arena extends AppCompatActivity {
             int orientation = (int) obstacle5.getRotation();
             switch (((orientation / 90) % 4 + 4) % 4) {
                 case 0:
-                    obstacle5.setImageResource(Helper.resources.get("o5n"));
+                    obstacle5.setImageResource(Helper.resources.get("5n"));
                     break;
                 case 1:
-                    obstacle5.setImageResource(Helper.resources.get("o5e"));
+                    obstacle5.setImageResource(Helper.resources.get("5e"));
                     break;
                 case 2:
-                    obstacle5.setImageResource(Helper.resources.get("o5s"));
+                    obstacle5.setImageResource(Helper.resources.get("5s"));
                     break;
                 case 3:
-                    obstacle5.setImageResource(Helper.resources.get("o5w"));
+                    obstacle5.setImageResource(Helper.resources.get("5w"));
                     break;
             }
         });
@@ -309,16 +309,16 @@ public class Arena extends AppCompatActivity {
             int orientation = (int) obstacle6.getRotation();
             switch (((orientation / 90) % 4 + 4) % 4) {
                 case 0:
-                    obstacle6.setImageResource(Helper.resources.get("o6n"));
+                    obstacle6.setImageResource(Helper.resources.get("6n"));
                     break;
                 case 1:
-                    obstacle6.setImageResource(Helper.resources.get("o6e"));
+                    obstacle6.setImageResource(Helper.resources.get("6e"));
                     break;
                 case 2:
-                    obstacle6.setImageResource(Helper.resources.get("o6s"));
+                    obstacle6.setImageResource(Helper.resources.get("6s"));
                     break;
                 case 3:
-                    obstacle6.setImageResource(Helper.resources.get("o6w"));
+                    obstacle6.setImageResource(Helper.resources.get("6w"));
                     break;
             }
         });
@@ -328,16 +328,16 @@ public class Arena extends AppCompatActivity {
             int orientation = (int) obstacle7.getRotation();
             switch (((orientation / 90) % 4 + 4) % 4) {
                 case 0:
-                    obstacle7.setImageResource(Helper.resources.get("o7n"));
+                    obstacle7.setImageResource(Helper.resources.get("7n"));
                     break;
                 case 1:
-                    obstacle7.setImageResource(Helper.resources.get("o7e"));
+                    obstacle7.setImageResource(Helper.resources.get("7e"));
                     break;
                 case 2:
-                    obstacle7.setImageResource(Helper.resources.get("o7s"));
+                    obstacle7.setImageResource(Helper.resources.get("7s"));
                     break;
                 case 3:
-                    obstacle7.setImageResource(Helper.resources.get("o7w"));
+                    obstacle7.setImageResource(Helper.resources.get("7w"));
                     break;
             }
         });
@@ -347,16 +347,16 @@ public class Arena extends AppCompatActivity {
             int orientation = (int) obstacle8.getRotation();
             switch (((orientation / 90) % 4 + 4) % 4) {
                 case 0:
-                    obstacle8.setImageResource(Helper.resources.get("o8n"));
+                    obstacle8.setImageResource(Helper.resources.get("8n"));
                     break;
                 case 1:
-                    obstacle8.setImageResource(Helper.resources.get("o8e"));
+                    obstacle8.setImageResource(Helper.resources.get("8e"));
                     break;
                 case 2:
-                    obstacle8.setImageResource(Helper.resources.get("o8s"));
+                    obstacle8.setImageResource(Helper.resources.get("8s"));
                     break;
                 case 3:
-                    obstacle8.setImageResource(Helper.resources.get("o8w"));
+                    obstacle8.setImageResource(Helper.resources.get("8w"));
                     break;
             }
         });
@@ -710,27 +710,49 @@ public class Arena extends AppCompatActivity {
      * Set obstacle ID images
      */
     private void setObstacleImageID(int obstacleNumber, String image) {
-        int orientation = (int) obstacles.get(obstacleNumber).getRotation();
+
         ImageView iv = obstacles.get(obstacleNumber);
+        if (iv == null) {
+            Log.e("Error", "Obstacle ImageView is null for obstacle number: " + obstacleNumber);
+            return;
+        }
+
+        int orientation = (int) iv.getRotation();
         Log.d("Obstacle ID", String.valueOf(iv.getId()));
+        Log.d("Orientation", "Obstacle rotation: " + orientation);
+
         try {
+            Integer resourceID;
+            String resourceKey;
+
             if (orientation == 0) {
-                obstacles.get(obstacleNumber).setImageResource(Helper.resources.get(image + "n"));
+                resourceID = Helper.resources.get(image + "n");
             } else if (orientation == 90) {
-                obstacles.get(obstacleNumber).setImageResource(Helper.resources.get(image + "e"));
+                resourceID = Helper.resources.get(image + "e");
             } else if (orientation == 180) {
-                obstacles.get(obstacleNumber).setImageResource(Helper.resources.get(image + "s"));
+                resourceID = Helper.resources.get(image + "s");
             } else if (orientation == 270) {
-                obstacles.get(obstacleNumber).setImageResource(Helper.resources.get(image + "w"));
+                resourceID = Helper.resources.get(image + "w");
             } else {
-                obstacles.get(obstacleNumber).setImageResource(Helper.resources.get(image));
-                obstacles.get(obstacleNumber).setRotation(0);
+                resourceKey = image;
+                iv.setRotation(0);
+                Log.d("Resource Key", "Trying to fetch resource with key: " + resourceKey);
+
+                resourceID = Helper.resources.get(resourceKey);
+
+            }
+
+            if (resourceID != null) {
+                iv.setImageResource(resourceID);
+            } else {
+                Log.e("Error", "Image resource not found for " + image + " and orientation " + orientation);
             }
         } catch (Exception e) {
-            // TODO: handle exception
+            Log.e("Exception", "Error in setObstacleImageID: " + e.getMessage());
             e.printStackTrace();
         }
     }
+
 
     /*
      * Initializes the arrow buttons
@@ -1964,22 +1986,22 @@ public class Arena extends AppCompatActivity {
         car.setRotation(0);
         updateXYDirText();
 
-        obstacle1.setImageResource(Helper.resources.get("o1n"));
-        obstacle1.setTag(Helper.resources.get("o1n"));
-        obstacle2.setImageResource(Helper.resources.get("o2n"));
-        obstacle2.setTag(Helper.resources.get("o2n"));
-        obstacle3.setImageResource(Helper.resources.get("o3n"));
-        obstacle3.setTag(Helper.resources.get("o3n"));
-        obstacle4.setImageResource(Helper.resources.get("o4n"));
-        obstacle4.setTag(Helper.resources.get("o4n"));
-        obstacle5.setImageResource(Helper.resources.get("o5n"));
-        obstacle5.setTag(Helper.resources.get("o5n"));
-        obstacle6.setImageResource(Helper.resources.get("o6n"));
-        obstacle6.setTag(Helper.resources.get("o6n"));
-        obstacle7.setImageResource(Helper.resources.get("o7n"));
-        obstacle7.setTag(Helper.resources.get("o7n"));
-        obstacle8.setImageResource(Helper.resources.get("o8n"));
-        obstacle1.setTag(Helper.resources.get("o8n"));
+        obstacle1.setImageResource(Helper.resources.get("1n"));
+        obstacle1.setTag(Helper.resources.get("1n"));
+        obstacle2.setImageResource(Helper.resources.get("2n"));
+        obstacle2.setTag(Helper.resources.get("2n"));
+        obstacle3.setImageResource(Helper.resources.get("3n"));
+        obstacle3.setTag(Helper.resources.get("3n"));
+        obstacle4.setImageResource(Helper.resources.get("4n"));
+        obstacle4.setTag(Helper.resources.get("4n"));
+        obstacle5.setImageResource(Helper.resources.get("5n"));
+        obstacle5.setTag(Helper.resources.get("5n"));
+        obstacle6.setImageResource(Helper.resources.get("6n"));
+        obstacle6.setTag(Helper.resources.get("6n"));
+        obstacle7.setImageResource(Helper.resources.get("7n"));
+        obstacle7.setTag(Helper.resources.get("7n"));
+        obstacle8.setImageResource(Helper.resources.get("8n"));
+        obstacle1.setTag(Helper.resources.get("8n"));
 
         obstacle1.setRotation(0);
         obstacle2.setRotation(0);
@@ -1999,42 +2021,42 @@ public class Arena extends AppCompatActivity {
         obstacle1.setX(350);
         obstacle1.setY(70);
         obstacle1.setRotation(180);
-        obstacle1.setImageResource(Helper.resources.get("o1s"));
+        obstacle1.setImageResource(Helper.resources.get("1s"));
 
         obstacle2.setX(595);
         obstacle2.setY(70);
         obstacle2.setRotation(270);
-        obstacle2.setImageResource(Helper.resources.get("o2w"));
+        obstacle2.setImageResource(Helper.resources.get("2w"));
 
         obstacle3.setX(70);
         obstacle3.setY(105);
         obstacle3.setRotation(180);
-        obstacle3.setImageResource(Helper.resources.get("o3s"));
+        obstacle3.setImageResource(Helper.resources.get("3s"));
 
         obstacle4.setX(560);
         obstacle4.setY(525);
         obstacle4.setRotation(180);
-        obstacle4.setImageResource(Helper.resources.get("o4s"));
+        obstacle4.setImageResource(Helper.resources.get("4s"));
 
         obstacle5.setX(455);
         obstacle5.setY(630);
         obstacle5.setRotation(270);
-        obstacle5.setImageResource(Helper.resources.get("o5w"));
+        obstacle5.setImageResource(Helper.resources.get("5w"));
 
         obstacle6.setX(210);
         obstacle6.setY(455);
         obstacle6.setRotation(0);
-        obstacle6.setImageResource(Helper.resources.get("o6n"));
+        obstacle6.setImageResource(Helper.resources.get("6n"));
 
         obstacle7.setX(315);
         obstacle7.setY(280);
         obstacle7.setRotation(270);
-        obstacle7.setImageResource(Helper.resources.get("o7w"));
+        obstacle7.setImageResource(Helper.resources.get("7w"));
 
         obstacle8.setX(105);
         obstacle8.setY(560);
         obstacle8.setRotation(90);
-        obstacle8.setImageResource(Helper.resources.get("o8e"));
+        obstacle8.setImageResource(Helper.resources.get("8e"));
 
         Toast.makeText(Arena.this, "Preset 1 Applied", Toast.LENGTH_SHORT).show();
     }
@@ -2055,19 +2077,19 @@ public class Arena extends AppCompatActivity {
             switch (obstacle1data[2]) {
                 case ("N"):
                     obstacle1.setRotation(0);
-                    obstacle1.setImageResource(Helper.resources.get("o1n"));
+                    obstacle1.setImageResource(Helper.resources.get("1n"));
                     break;
                 case ("E"):
                     obstacle1.setRotation(90);
-                    obstacle1.setImageResource(Helper.resources.get("o1e"));
+                    obstacle1.setImageResource(Helper.resources.get("1e"));
                     break;
                 case ("S"):
                     obstacle1.setRotation(180);
-                    obstacle1.setImageResource(Helper.resources.get("o1s"));
+                    obstacle1.setImageResource(Helper.resources.get("1s"));
                     break;
                 case ("W"):
                     obstacle1.setRotation(270);
-                    obstacle1.setImageResource(Helper.resources.get("o1w"));
+                    obstacle1.setImageResource(Helper.resources.get("1w"));
                     break;
                 default:
                     break;
@@ -2079,19 +2101,19 @@ public class Arena extends AppCompatActivity {
             switch (obstacle2data[2]) {
                 case ("N"):
                     obstacle2.setRotation(0);
-                    obstacle2.setImageResource(Helper.resources.get("o2n"));
+                    obstacle2.setImageResource(Helper.resources.get("2n"));
                     break;
                 case ("E"):
                     obstacle2.setRotation(90);
-                    obstacle2.setImageResource(Helper.resources.get("o2e"));
+                    obstacle2.setImageResource(Helper.resources.get("2e"));
                     break;
                 case ("S"):
                     obstacle2.setRotation(180);
-                    obstacle2.setImageResource(Helper.resources.get("o2s"));
+                    obstacle2.setImageResource(Helper.resources.get("2s"));
                     break;
                 case ("W"):
                     obstacle2.setRotation(270);
-                    obstacle2.setImageResource(Helper.resources.get("o2w"));
+                    obstacle2.setImageResource(Helper.resources.get("2w"));
                     break;
                 default:
                     break;
@@ -2103,19 +2125,19 @@ public class Arena extends AppCompatActivity {
             switch (obstacle3data[2]) {
                 case ("N"):
                     obstacle3.setRotation(0);
-                    obstacle3.setImageResource(Helper.resources.get("o3n"));
+                    obstacle3.setImageResource(Helper.resources.get("3n"));
                     break;
                 case ("E"):
                     obstacle3.setRotation(90);
-                    obstacle3.setImageResource(Helper.resources.get("o3e"));
+                    obstacle3.setImageResource(Helper.resources.get("3e"));
                     break;
                 case ("S"):
                     obstacle3.setRotation(180);
-                    obstacle3.setImageResource(Helper.resources.get("o3s"));
+                    obstacle3.setImageResource(Helper.resources.get("3s"));
                     break;
                 case ("W"):
                     obstacle3.setRotation(270);
-                    obstacle3.setImageResource(Helper.resources.get("o3w"));
+                    obstacle3.setImageResource(Helper.resources.get("3w"));
                     break;
                 default:
                     break;
@@ -2127,19 +2149,19 @@ public class Arena extends AppCompatActivity {
             switch (obstacle4data[2]) {
                 case ("N"):
                     obstacle4.setRotation(0);
-                    obstacle4.setImageResource(Helper.resources.get("o4n"));
+                    obstacle4.setImageResource(Helper.resources.get("4n"));
                     break;
                 case ("E"):
                     obstacle4.setRotation(90);
-                    obstacle4.setImageResource(Helper.resources.get("o4e"));
+                    obstacle4.setImageResource(Helper.resources.get("4e"));
                     break;
                 case ("S"):
                     obstacle4.setRotation(180);
-                    obstacle4.setImageResource(Helper.resources.get("o4s"));
+                    obstacle4.setImageResource(Helper.resources.get("4s"));
                     break;
                 case ("W"):
                     obstacle4.setRotation(270);
-                    obstacle4.setImageResource(Helper.resources.get("o4w"));
+                    obstacle4.setImageResource(Helper.resources.get("4w"));
                     break;
                 default:
                     break;
@@ -2151,19 +2173,19 @@ public class Arena extends AppCompatActivity {
             switch (obstacle5data[2]) {
                 case ("N"):
                     obstacle5.setRotation(0);
-                    obstacle5.setImageResource(Helper.resources.get("o5n"));
+                    obstacle5.setImageResource(Helper.resources.get("5n"));
                     break;
                 case ("E"):
                     obstacle5.setRotation(90);
-                    obstacle5.setImageResource(Helper.resources.get("o5e"));
+                    obstacle5.setImageResource(Helper.resources.get("5e"));
                     break;
                 case ("S"):
                     obstacle5.setRotation(180);
-                    obstacle5.setImageResource(Helper.resources.get("o5s"));
+                    obstacle5.setImageResource(Helper.resources.get("5s"));
                     break;
                 case ("W"):
                     obstacle5.setRotation(270);
-                    obstacle5.setImageResource(Helper.resources.get("o5w"));
+                    obstacle5.setImageResource(Helper.resources.get("5w"));
                     break;
                 default:
                     break;
@@ -2175,19 +2197,19 @@ public class Arena extends AppCompatActivity {
             switch (obstacle6data[2]) {
                 case ("N"):
                     obstacle6.setRotation(0);
-                    obstacle6.setImageResource(Helper.resources.get("o6n"));
+                    obstacle6.setImageResource(Helper.resources.get("6n"));
                     break;
                 case ("E"):
                     obstacle6.setRotation(90);
-                    obstacle6.setImageResource(Helper.resources.get("o6e"));
+                    obstacle6.setImageResource(Helper.resources.get("6e"));
                     break;
                 case ("S"):
                     obstacle6.setRotation(180);
-                    obstacle6.setImageResource(Helper.resources.get("o6s"));
+                    obstacle6.setImageResource(Helper.resources.get("6s"));
                     break;
                 case ("W"):
                     obstacle6.setRotation(270);
-                    obstacle6.setImageResource(Helper.resources.get("o6w"));
+                    obstacle6.setImageResource(Helper.resources.get("6w"));
                     break;
                 default:
                     break;
@@ -2199,19 +2221,19 @@ public class Arena extends AppCompatActivity {
             switch (obstacle7data[2]) {
                 case ("N"):
                     obstacle7.setRotation(0);
-                    obstacle7.setImageResource(Helper.resources.get("o7n"));
+                    obstacle7.setImageResource(Helper.resources.get("7n"));
                     break;
                 case ("E"):
                     obstacle7.setRotation(90);
-                    obstacle7.setImageResource(Helper.resources.get("o7e"));
+                    obstacle7.setImageResource(Helper.resources.get("7e"));
                     break;
                 case ("S"):
                     obstacle7.setRotation(180);
-                    obstacle7.setImageResource(Helper.resources.get("o7s"));
+                    obstacle7.setImageResource(Helper.resources.get("7s"));
                     break;
                 case ("W"):
                     obstacle7.setRotation(270);
-                    obstacle7.setImageResource(Helper.resources.get("o7w"));
+                    obstacle7.setImageResource(Helper.resources.get("7w"));
                     break;
                 default:
                     break;
@@ -2223,19 +2245,19 @@ public class Arena extends AppCompatActivity {
             switch (obstacle8data[2]) {
                 case ("N"):
                     obstacle8.setRotation(0);
-                    obstacle8.setImageResource(Helper.resources.get("o8n"));
+                    obstacle8.setImageResource(Helper.resources.get("8n"));
                     break;
                 case ("E"):
                     obstacle8.setRotation(90);
-                    obstacle8.setImageResource(Helper.resources.get("o8e"));
+                    obstacle8.setImageResource(Helper.resources.get("8e"));
                     break;
                 case ("S"):
                     obstacle8.setRotation(180);
-                    obstacle8.setImageResource(Helper.resources.get("o8s"));
+                    obstacle8.setImageResource(Helper.resources.get("8s"));
                     break;
                 case ("W"):
                     obstacle8.setRotation(270);
-                    obstacle8.setImageResource(Helper.resources.get("o8w"));
+                    obstacle8.setImageResource(Helper.resources.get("8w"));
                     break;
                 default:
                     break;
@@ -2273,19 +2295,19 @@ public class Arena extends AppCompatActivity {
                 switch (obsdata[2]) {
                     case ("N"):
                         obstacles.get(obstaclenum).setRotation(0);
-                        obstacles.get(obstaclenum).setImageResource(Helper.resources.get("o" + obstaclenum + "n"));
+                        obstacles.get(obstaclenum).setImageResource(Helper.resources.get(obstaclenum + "n"));
                         break;
                     case ("E"):
                         obstacles.get(obstaclenum).setRotation(90);
-                        obstacles.get(obstaclenum).setImageResource(Helper.resources.get("o" + obstaclenum + "e"));
+                        obstacles.get(obstaclenum).setImageResource(Helper.resources.get(obstaclenum + "e"));
                         break;
                     case ("S"):
                         obstacles.get(obstaclenum).setRotation(180);
-                        obstacles.get(obstaclenum).setImageResource(Helper.resources.get("o" + obstaclenum + "s"));
+                        obstacles.get(obstaclenum).setImageResource(Helper.resources.get(obstaclenum + "s"));
                         break;
                     case ("W"):
                         obstacles.get(obstaclenum).setRotation(270);
-                        obstacles.get(obstaclenum).setImageResource(Helper.resources.get("o" + obstaclenum + "w"));
+                        obstacles.get(obstaclenum).setImageResource(Helper.resources.get(obstaclenum + "w"));
                         break;
                     default:
                         break;
@@ -2514,7 +2536,7 @@ public class Arena extends AppCompatActivity {
                         //updateRobotPosition(Integer.parseInt(x), adjusted_y, direction_int);
                         break;
 
-                    // update obstacle ID (format - TARGET,obstacle_number,target_ID)
+                    // update obstacle ID (format - TARGET,obstacle_number,target_ID) (EG. TARGET,1,3)
                     case Helper.TARGET:
                         int obstacleNumber = Character.getNumericValue(message.charAt(7));
                         String solution = message.substring(9);
@@ -2523,7 +2545,7 @@ public class Arena extends AppCompatActivity {
                             Toast.makeText(Arena.this, "Image not recognized, trying again", Toast.LENGTH_SHORT).show();
                         } else {
                             // RMB TO PLUS 1 !!
-                            setObstacleImageID(obstacleNumber + 1, solution);
+                            setObstacleImageID(obstacleNumber, solution);
                             Toast.makeText(Arena.this,
                                     "Obstacle " + obstacleNumber + " changed to Target ID: " + solution,
                                     Toast.LENGTH_SHORT).show();
