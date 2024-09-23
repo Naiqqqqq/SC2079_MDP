@@ -2532,8 +2532,8 @@ public class Arena extends AppCompatActivity {
                                 break;
                         }
 
-                         updateRobotPosition(Integer.parseInt(x), Integer.parseInt(y), direction_int);
-                        //updateRobotPosition(Integer.parseInt(x), adjusted_y, direction_int);
+                         //updateRobotPosition(Integer.parseInt(x), Integer.parseInt(y), direction_int);
+                        updateRobotPosition(Integer.parseInt(x), adjusted_y, direction_int);
                         break;
 
                     // update obstacle ID (format - TARGET,obstacle_number,target_ID) (EG. TARGET,1,3)
