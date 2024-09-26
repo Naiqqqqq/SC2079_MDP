@@ -49,6 +49,7 @@ public class Communication extends AppCompatActivity {
                     BluetoothService.write(bytes);
                     String old = showReceived.getText().toString();
                     showReceived.setText(old + "\n[TABLET]:  " + message);
+                    Log.d(TAG, message);
                 } else {
                     Toast.makeText(Communication.this, "Please connect to Bluetooth!", Toast.LENGTH_SHORT).show();
                 }

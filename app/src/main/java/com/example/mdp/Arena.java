@@ -2316,6 +2316,9 @@ public class Arena extends AppCompatActivity {
         }
     }
 
+    /*
+     * Returns 2-D array of obstacles in [x, y, direction] format
+     */
     private void sendObstacles() {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder
@@ -2337,9 +2340,7 @@ public class Arena extends AppCompatActivity {
         }
     }
 
-    /*
-     * Returns 2-D array of obstacles in [x, y, direction] format
-     */
+
     private String[][] savedObstacles() {
         String[][] savedPreset = { getObstacleLocation(obstacle1).split(","), getObstacleLocation(obstacle2).split(","),
                 getObstacleLocation(obstacle3).split(","),
@@ -2640,7 +2641,6 @@ public class Arena extends AppCompatActivity {
                         break;
                 }
             } catch (Exception e) {
-                // TODO: handle exception
                 Log.d(TAG, "Exception: " + e.getMessage());
                 return;
             }
