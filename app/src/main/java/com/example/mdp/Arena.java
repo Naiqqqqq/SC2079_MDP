@@ -9,7 +9,9 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.Looper;
 import android.os.SystemClock;
+import android.os.Handler;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
@@ -31,6 +33,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
+
 
 public class Arena extends AppCompatActivity {
     public static final String SHARED_PREFS = "sharedPrefs";
@@ -131,7 +134,7 @@ public class Arena extends AppCompatActivity {
     }
 
     private static final int SNAP_GRID_INTERVAL = 35;
-    private static final int ANIMATOR_DURATION = 1000;
+    private static final int ANIMATOR_DURATION = 800;
 
     /*
      * start from (1,1)
@@ -873,37 +876,42 @@ public class Arena extends AppCompatActivity {
         int orientation = (int) car.getRotation();
         int new_x, new_y;
         ObjectAnimator animator;
+
         switch (((orientation / 90) % 4 + 4) % 4) {
             case 0:
                 new_y = (int) car.getY() - noOfGrids * SNAP_GRID_INTERVAL;
-                car.setY(new_y);
+                //car.setY(new_y);
                 animator = ObjectAnimator.ofFloat(car, "y", new_y);
-                animator.setDuration(noOfGrids * ANIMATOR_DURATION);
+                animator.setDuration(ANIMATOR_DURATION);
                 animator.start();
+                car.setY(new_y);
                 updateXYDirText();
                 break;
             case 1:
                 new_x = (int) car.getX() + noOfGrids * SNAP_GRID_INTERVAL;
-                car.setX(new_x);
+                //car.setX(new_x);
                 animator = ObjectAnimator.ofFloat(car, "x", new_x);
-                animator.setDuration(noOfGrids * ANIMATOR_DURATION);
+                animator.setDuration(ANIMATOR_DURATION);
                 animator.start();
+                car.setX(new_x);
                 updateXYDirText();
                 break;
             case 2:
                 new_y = (int) car.getY() + noOfGrids * SNAP_GRID_INTERVAL;
-                car.setY(new_y);
+                //car.setY(new_y);
                 animator = ObjectAnimator.ofFloat(car, "y", new_y);
-                animator.setDuration(noOfGrids * ANIMATOR_DURATION);
+                animator.setDuration(ANIMATOR_DURATION);
                 animator.start();
+                car.setX(new_y);
                 updateXYDirText();
                 break;
             case 3:
                 new_x = (int) car.getX() - noOfGrids * SNAP_GRID_INTERVAL;
-                car.setX(new_x);
+                //car.setX(new_x);
                 animator = ObjectAnimator.ofFloat(car, "x", new_x);
-                animator.setDuration(noOfGrids * ANIMATOR_DURATION);
+                animator.setDuration(ANIMATOR_DURATION);
                 animator.start();
+                car.setX(new_x);
                 updateXYDirText();
                 break;
             default:
@@ -919,34 +927,38 @@ public class Arena extends AppCompatActivity {
         switch (((orientation / 90) % 4 + 4) % 4) {
             case 0:
                 new_y = (int) car.getY() + noOfGrids * SNAP_GRID_INTERVAL;
-                car.setY(new_y);
+                //car.setY(new_y);
                 animator = ObjectAnimator.ofFloat(car, "y", new_y);
-                animator.setDuration(noOfGrids * ANIMATOR_DURATION);
+                animator.setDuration(ANIMATOR_DURATION);
                 animator.start();
+                car.setY(new_y);
                 updateXYDirText();
                 break;
             case 1:
                 new_x = (int) car.getX() - noOfGrids * SNAP_GRID_INTERVAL;
-                car.setX(new_x);
+                //car.setX(new_x);
                 animator = ObjectAnimator.ofFloat(car, "x", new_x);
-                animator.setDuration(noOfGrids * ANIMATOR_DURATION);
+                animator.setDuration(ANIMATOR_DURATION);
                 animator.start();
+                car.setX(new_x);
                 updateXYDirText();
                 break;
             case 2:
                 new_y = (int) car.getY() - noOfGrids * SNAP_GRID_INTERVAL;
-                car.setY(new_y);
+                //car.setY(new_y);
                 animator = ObjectAnimator.ofFloat(car, "y", new_y);
-                animator.setDuration(noOfGrids * ANIMATOR_DURATION);
+                animator.setDuration(ANIMATOR_DURATION);
                 animator.start();
+                car.setX(new_y);
                 updateXYDirText();
                 break;
             case 3:
                 new_x = (int) car.getX() + noOfGrids * SNAP_GRID_INTERVAL;
-                car.setX(new_x);
+                //car.setX(new_x);
                 animator = ObjectAnimator.ofFloat(car, "x", new_x);
-                animator.setDuration(noOfGrids * ANIMATOR_DURATION);
+                animator.setDuration(ANIMATOR_DURATION);
                 animator.start();
+                car.setX(new_x);
                 updateXYDirText();
                 break;
             default:
@@ -1910,9 +1922,9 @@ public class Arena extends AppCompatActivity {
 
         if (BluetoothService.BluetoothConnectionStatus) {
             // Toast.makeText(this, stringBuilder.toString(), Toast.LENGTH_SHORT).show();
-//            byte[] bytes = IRstart.getBytes(Charset.defaultCharset());
-//            BluetoothService.write(bytes);
             sendObstacles();
+            //byte[] bytes = IRstart.getBytes(Charset.defaultCharset());
+            //BluetoothService.write(bytes);
             Toast.makeText(Arena.this, "Obstacles sent", Toast.LENGTH_SHORT).show();
             updateStatusWindow("IR Started");
         } else {
@@ -2486,7 +2498,7 @@ public class Arena extends AppCompatActivity {
 
             try {
                 switch (command) {
-                    // move robot
+                    // move robot (format - ROBOT,x cord, y cord, dir) (EG. ROBOT,<3>,<4>,<W>))
                     case Helper.ROBOT:
                         int startingIndex = message.indexOf("<");
                         int endingIndex = message.indexOf(">");
@@ -2541,8 +2553,9 @@ public class Arena extends AppCompatActivity {
 
                     // update obstacle ID (format - TARGET,obstacle_number,target_ID) (EG. TARGET,1,3)
                     case Helper.TARGET:
-                        int obstacleNumber = Character.getNumericValue(message.charAt(7));
-                        String solution = message.substring(9);
+                        String[] parts = message.split(",");
+                        int obstacleNumber = Integer.parseInt(parts[1].trim());
+                        String solution = parts[2].trim();
                         Log.d(TAG, "Solution value: " + solution);
                         if (Integer.parseInt(solution) == 0) {
                             Toast.makeText(Arena.this, "Image not recognized, trying again", Toast.LENGTH_SHORT).show();
@@ -2580,66 +2593,121 @@ public class Arena extends AppCompatActivity {
                         setObstacles(obstaclesPreset);
                         break;
 
-                    // commands from RPI
+                    // commands from RPI eg.(COMMAND,R018) or (COMMAND,F100)
                     case Helper.COMMAND:
                         String moveCommand = message.substring(message.indexOf(',') + 1); //
                         // substring after COMMANDS
                         Log.d(TAG, "Command received: " + moveCommand);
 
-                        String prefix = moveCommand.substring(0, 2);
-                        String distance = moveCommand.substring(2);
+                        String prefix = moveCommand.substring(0, 1);
+                        String distance = moveCommand.substring(1);
                         int convertedDistance;
+                        String oneeighty = prefix + distance;
+                        Log.d(TAG, oneeighty);
                         Log.d(TAG, prefix + ";" + distance);
 
-                        switch (prefix) {
-                            // forward
-                            case "SF":
-                                convertedDistance = Integer.parseInt(distance) / 10;
-                                Log.d(TAG, prefix + ";" + convertedDistance);
-                                forwardButton(convertedDistance);
-                                break;
-                            // reverseA
-                            case "SB":
-                                convertedDistance = Integer.parseInt(distance) / 10;
-                                reverseButton(convertedDistance);
-                                break;
-                            // right forward
-                            case "RF":
+                            if(oneeighty.equals("R018")){
                                 rightMidButtonCommand();
-                                break;
-                            // right backward
-                            case "RB":
-                                rightMidReverseButtonCommand();
-                                break;
-                            // left forward
-                            case "LF":
-                                leftMidButtonCommand();
-                                break;
-                            // left backward
-                            case "LB":
+                                Log.d(TAG, "First 90 DONE");
+                                new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        rightMidButtonCommand(); // Execute the second command after delay
+                                        Log.d(TAG, "second 90 DONE");
+                                    }
+                                }, ANIMATOR_DURATION + 800); // Delay based on animation duration
+                            }
+                            else if (oneeighty.equals("L018")){
+                                    leftMidButtonCommand();
+                                    Log.d(TAG, "First 90 DONE");
+                                    new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
+                                        @Override
+                                        public void run() {
+                                            leftMidButtonCommand(); // Execute the second command after delay
+                                            Log.d(TAG, "second 90 DONE");
+                                        }
+                                    }, ANIMATOR_DURATION + 800); // Delay based on animation duration
+                            }
+                            else if (oneeighty.equals("Q018")){
                                 leftMidReverseButtonCommand();
-                                break;
-                            // slide right forward
-                            case "JF":
-                                rightSlideCommand();
-                                break;
-                            // slide right backward
-                            case "JB":
-                                rightSlideReverseCommand();
-                                break;
-                            // slide left forward
-                            case "KF":
-                                leftSlideCommand();
-                                break;
-                            // slide left backward
-                            case "KB":
-                                leftSlideReverseCommand();
-                                break;
+                                Log.d(TAG, "First 90 DONE");
+                                new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        leftMidReverseButtonCommand(); // Execute the second command after delay
+                                        Log.d(TAG, "second 90 DONE");
+                                    }
+                                }, ANIMATOR_DURATION + 800); // Delay based on animation duration
+                            }
+                            else if (oneeighty.equals("E018")){
+                                rightMidReverseButtonCommand();
+                                Log.d(TAG, "First 90 DONE");
+                                new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        rightMidReverseButtonCommand(); // Execute the second command after delay
+                                        Log.d(TAG, "second 90 DONE");
+                                    }
+                                }, ANIMATOR_DURATION + 800); // Delay based on animation duration
+                            }
+
+                            else{
+
+                                switch (prefix) {
+                                    // forward
+                                    case "F":
+                                        convertedDistance = Integer.parseInt(distance)/10;
+                                        Log.d(TAG, prefix + ";" + convertedDistance);
+                                        forwardButton(convertedDistance);
+                                        break;
+                                    // reverseA
+                                    case "B":
+                                        convertedDistance = Integer.parseInt(distance)/10;
+                                        reverseButton(convertedDistance);
+                                        break;
+                                    // right forward
+                                    case "R":
+                                        rightMidButtonCommand();
+                                        break;
+                                    // right backward
+                                    case "E":
+                                        rightMidReverseButtonCommand();
+                                        break;
+                                    // left forward
+                                    case "L":
+                                        leftMidButtonCommand();
+                                        break;
+                                    // left backward
+                                    case "Q":
+                                        leftMidReverseButtonCommand();
+                                        break;
+                                    // slide right forward
+                                    case "JF":
+                                        rightSlideCommand();
+                                        break;
+                                    // slide right backward
+                                    case "JB":
+                                        rightSlideReverseCommand();
+                                        break;
+                                    // slide left forward
+                                    case "KF":
+                                        leftSlideCommand();
+                                        break;
+                                    // slide left backward
+                                    case "KB":
+                                        leftSlideReverseCommand();
+                                        break;
+
+                                    default:
+                                        // for out of "ROBOT/TARGET/STATUS/COMMAND" cases
+                                        break;
+                                }
+
                         }
-                    default:
-                        // for out of "ROBOT/TARGET/STATUS/COMMAND" cases
-                        break;
-                }
+                        }
+
+
+
             } catch (Exception e) {
                 Log.d(TAG, "Exception: " + e.getMessage());
                 return;

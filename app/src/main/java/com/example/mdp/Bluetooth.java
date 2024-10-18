@@ -334,7 +334,7 @@ public class Bluetooth extends AppCompatActivity {
                         Log.d(TAG, "mBroadcastReceiver2: Discoverability Enabled.");
                         break;
                     case BluetoothAdapter.SCAN_MODE_CONNECTABLE:
-                        Log.d(TAG, "mBroadcastReceiver2: Discoverability Disabled. Able to receive connections.");
+                        Log.d(TAG, "mBroadcastReceiver2: Discoverability Enabled. Able to receive connections.");
                         break;
                     case BluetoothAdapter.SCAN_MODE_NONE:
                         Log.d(TAG, "mBroadcastReceiver2: Discoverability Disabled. Not able to receive connections.");

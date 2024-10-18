@@ -122,6 +122,7 @@
             tools:layout_editor_absoluteX="448dp" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
             android:layout_width="match_parent"
             android:layout_height="600dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -183,31 +184,6 @@
                 app:layout_constraintEnd_toEndOf="@+id/forwardButton"
                 app:layout_constraintStart_toStartOf="@+id/forwardButton"
                 app:layout_constraintTop_toBottomOf="@+id/forwardButton" />
-
-            <Button
-                android:id="@+id/timerButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:backgroundTint="#dc4048"
-                android:fontFamily="@font/jockey_one_regular"
-                android:text="Stop timer"
-                android:textColor="#ffffff"
-                android:textSize="20sp"
-                app:layout_constraintEnd_toEndOf="@+id/IRTimer"
-                app:layout_constraintStart_toStartOf="@+id/IRTimer"
-                app:layout_constraintTop_toBottomOf="@+id/IRTimer" />
-
-            <Chronometer
-                android:id="@+id/IRTimer"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="52dp"
-                android:textColor="@color/white"
-                android:textSize="30dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/statusWindowText"
-                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/statusWindowTitle"
@@ -476,6 +452,28 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintGuide_begin="531dp" />
+
+        <Chronometer
+            android:id="@+id/IRTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38dp"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/obstacle8" />
+
+        <Button
+            android:id="@+id/timerButton"
+            android:layout_width="81dp"
+            android:layout_height="55dp"
+            android:backgroundTint="#dc4048"
+            android:fontFamily="@font/jockey_one_regular"
+            android:text="Stop"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/IRTimer" />
 
         <!-- Status Window -->
 

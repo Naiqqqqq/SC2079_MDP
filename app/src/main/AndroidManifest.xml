@@ -48,5 +48,8 @@
             android:label="Arena"
             android:exported="true"
             android:parentActivityName=".MainActivity"/>
+
+
+
     </application>
 </manifest>

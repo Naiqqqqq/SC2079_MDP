@@ -232,7 +232,11 @@ public class Helper {
       put("40e", R.drawable.circle_e);
       put("40w", R.drawable.circle_w);
 
-      put("41", R.drawable.bullseye);
+      put("99", R.drawable.bullseye);
+      put("99n", R.drawable.bullseye_n);
+      put("99s", R.drawable.bullseye_s);
+      put("99e", R.drawable.bullseye_e);
+      put("99w", R.drawable.bullseye_w);
       //put("42", R.drawable.yellow_question_mark);
       //put("43", R.drawable.red_question_mark);
     }
